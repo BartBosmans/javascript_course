@@ -41,7 +41,7 @@ let name = 'John'; // String Literal
 let age = 30 //
 let lovesCats = true; // Boolean Literal
 let color = null; // Null
-let list; // undefined
+// let list; // undefined
 
 console.log(name);
 
@@ -208,3 +208,47 @@ console.log(personName);
 
 const personAgeUnder30 = people.filter(person => person.age < 30);
 console.log(personName);
+
+// conditionals
+
+let colorRed = 'red';
+
+if (colorRed == 'red'){
+  console.log(true);
+}
+
+let anAge = 30;
+if (anAge == 3){
+  console.log(true);
+}else{
+  console.log(false);
+}
+
+if (anAge !== 3){
+  if (anAge > 18){
+    console.log(true)
+  }
+}
+
+if(anAge < 35 && anAge > 18){
+  console.log(true);
+}
+
+let animal = 'cat';
+const likesCats = animal == 'cat' ?  true : false;
+console.log(likesCats);
+
+// DOM Document object model
+
+// single element selectors
+
+// events
+const btn = document.getElementById('myBtn');
+
+btn.addEventListener('click', (e) => {
+    console.log(e);
+});
+
+btn.addEventListener('mouseout', (e) =>{
+    btn.style.background = 'blue';
+});
